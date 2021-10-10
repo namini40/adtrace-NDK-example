@@ -34,7 +34,7 @@ NDK  is a toolset that allows you to use C and C++ code with Android, and provid
 
 #### <a id="qs-cmake"></a> CMake
 an external build tool that works alongside Gradle to build your native library. You do not need this component if you only plan to use ndk-build.
-![screenShot](./readme-repo/1.png)  
+<p align="start"><img width="800" src="./readme-repo/1.png" alt="Image"> </p>  
 
 
 #### <a id="qs-lldb"></a>LLDB
