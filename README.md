@@ -37,7 +37,7 @@ an external build tool that works alongside Gradle to build your native library.
 <p align="start"><img width="800" src="./readme-repo/1.png" alt="Image"> </p>  
 
 
-#### <a id="qs-lldb"></a>LLDB
+#### <a id="qs-lldb"></a> LLDB
 the debugger Android Studio uses to [debug native code](https://developer.android.com/studio/debug). you can read more details about how to install and config in [here](https://developer.android.com/studio/projects/install-ndk).
 
 ### <a id="qs-create-c-cpp-source-file"></a>Create new C/C++ source file
@@ -58,8 +58,8 @@ To add new `C/C++` source files to an existing project, proceed as follows:
 ### <a id="qs-configure-cmake"></a>Configure CMake
 A CMake build script is a plain text file that you must name `CMakeLists.txt` and includes commands CMake uses to build your C/C++ libraries. If your native sources don't already have a CMake build script, **you need to create one yourself** and include the appropriate CMake commands.
 
-<p align="start"><img width="400" src="https://imgur.com/obc1ZDL.png" alt="Image"> </p>  
-<p align="start"><img width="500" src="https://imgur.com/9HL2rxy.png" alt="Image"> </p> 
+<p align="start"><img width="400" src="./readme-repo/2.png" alt="Image"> </p>  
+<p align="start"><img width="500" src="./readme-repo/3.png" alt="Image"> </p> 
  To learn how to install CMake, see [Download the NDK and build tools].
 You can now configure your build script by adding CMake commands. To instruct CMake to create a native library from native source code, add the `cmake_minimum_required()` and `add_library()` commands to your build script:
 
@@ -114,7 +114,7 @@ companion object  {
   }  
 }
 ```
-<p align="start"><img width="600" src="https://imgur.com/JauaItv.png" alt="Image"> </p> 
+<p align="start"><img width="600" src="./readme-repo/4.png" alt="Image"> </p> 
 
 **Note:** If you rename or remove a library in your CMake build script, you need to clean your project before Gradle applies the changes or removes the older version of the library from your APK. To clean your project, select **Build > Clean Project** from the menu bar.
 
@@ -145,7 +145,7 @@ target_link_libraries( # Specifies the target library.
                        ${log-lib} )
 ```
 
-<p align="start"><img width="500" src="https://imgur.com/ozASMe5.png" alt="Image"> </p>  
+<p align="start"><img width="500" src="./readme-repo/5.png" alt="Image"> </p>  
 
 ### <a id="qs-cpp-jni"></a> Simple C++ code using JNI
 in order to receive information from native code you have to `include` JNI inside C++ file(`native-lib`).
@@ -237,7 +237,7 @@ AdTrace.onCreate(config);
 
 ```
 
-<p align="start"><img width="500" src="https://imgur.com/y3mvjfZ.png" alt="Image"> </p>  
+<p align="start"><img width="500" src="./readme-repo/6.png" alt="Image"> </p>  
 
 
 
