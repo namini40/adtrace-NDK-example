@@ -176,6 +176,7 @@ by which method name mean:
 |`com_example_nativecpplib`|package name|
 |`MainActivity`|class name|
 |`getAppToken`|native method used in class|
+
 and  `Java` method would obtain value to be used in any parts of code. for `appToken` it is like:
 ```java
 public native String getAppToken();
