@@ -2,8 +2,7 @@
 #include <string>
 
 extern "C" {
- JNIEXPORT jstring
-JNICALL
+ JNIEXPORT jstring JNICALL
 Java_io_adtrace_ndkexample_MainActivity_getAppToken(
         JNIEnv *env,
         jobject thiz) {
@@ -12,7 +11,8 @@ Java_io_adtrace_ndkexample_MainActivity_getAppToken(
 
     return env->NewStringUTF(token.c_str());
 }
-JNIEXPORT jlongArray JNICALL Java_io_adtrace_ndkexample_MainActivity_getSignatures(
+JNIEXPORT jlongArray JNICALL
+Java_io_adtrace_ndkexample_MainActivity_getSignatures(
         JNIEnv *env,
         jobject thiz) {
 
